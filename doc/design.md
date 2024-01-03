@@ -29,7 +29,7 @@ Cooperative, RPG, arcade.
 _The right tools for the job._
 - Rust, a multi-paradigm programming language with a focus on runtime stability and a rich ecosystem of development tools,
 - Bevy, a data-driven game engine made for Rust that makes use of the Entity Component System model,
-- (What art program will Racks be using?)
+- Asesprite, a open source pixel art program,
 - (What sound program will any of us be using?)
 
 **Platforms:** PC - Windows, Mac OS X, Linux
@@ -52,10 +52,13 @@ The gameplay revolves around the players always needing to be ahead of the curve
 _The systems that make the game tick._
 
 ### Movement
-Players move freely in the north, south, west and east directions. They are not snapped to the grid the worlds are built on. By holding a button, they can also sprint to move faster, at the cost of **energy**.
+Players move freely in the north, south, west and east directions. They are not snapped to the grid the worlds are built on. By holding a button, they can also sprint to move faster, at the cost of **energy**. 
+Velocity mechanics?
 
 ### Combat
 (We gotta work out how we want combat to work exactly. Attack style will be based on player equipment. What kind of equipment do we want? Do we want pre-determined classes?)
+Likely different movement subsets, similar to terraria?
+Melee/Ranged/AOE/Pets
 
 ### Quick Items
 Certain items, such as food and potions, can be used quickly by putting them into hotbar slots 1 to 4.
