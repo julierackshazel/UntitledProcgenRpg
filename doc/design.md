@@ -30,7 +30,7 @@ _The right tools for the job._
 - Rust, a multi-paradigm programming language with a focus on runtime stability and a rich ecosystem of development tools,
 - Bevy, a data-driven game engine made for Rust that makes use of the Entity Component System model,
 - Asesprite, a open source pixel art program,
-- (What sound program will any of us be using?)
+- FL studio for music, and audacity for recording basic sound effects 
 
 **Platforms:** PC - Windows, Mac OS X, Linux
 
