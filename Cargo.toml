@@ -8,9 +8,10 @@ edition = "2021"
 [dependencies]
 bevy = { version = "0.12.1", features = ["dynamic_linking"] }
 # REMOVE THE DYNAMIC LINKING FEATURE WHEN WE RELEASE, THIS IS JUST SO COMPILES ARE FASTER WHILE TESTING
+# REMOVE DYNAMIC LINKING AT RELEASE
 [profile.dev]
+#I SEE YOU MOVING TO THE NEXT LINE, IS DYNAMIC LINKING REMOVED
 opt-level = 1
-
 # Enable high optimizations for dependencies (incl. Bevy), but not for our code:
 [profile.dev.package."*"]
 opt-level = 3

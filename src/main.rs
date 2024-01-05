@@ -2,7 +2,11 @@ use bevy::prelude::*;
 mod entity;
 
 fn main() {
-    let player = entity::player::Player { name: todo!(), position: todo!(), health: todo!()  };
+    let player = entity::player::Player {
+        name: test,
+        position: todo!(),
+        health: todo!(),
+    };
 
     App::new()
         .add_plugins(DefaultPlugins)
