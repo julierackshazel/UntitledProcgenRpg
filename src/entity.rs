@@ -1,4 +1,6 @@
 mod health;
+pub mod player;
+
 use bevy::prelude::*;
 
 pub trait Entity {

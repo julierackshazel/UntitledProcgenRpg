@@ -1,3 +1,5 @@
+use std::cmp::max;
+
 pub struct Health {
     pub amount: u16,
     pub strength: u16,
@@ -5,7 +7,12 @@ pub struct Health {
 
 impl Health {
     pub fn take_damage(&mut self, damage: u16) {
-        self.amount.checked_sub(damage.checked_sub(self.strength));
+        let total_damage = damage - max(damage, self.strength);
+        
+        match self.amount.checked_sub(total_damage) {
+            Some(_) => {},
+            None => { }, // KILL
+        }
     }
 }
 
