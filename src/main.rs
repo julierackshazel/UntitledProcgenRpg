@@ -1,4 +1,5 @@
 use bevy::prelude::*;
+mod entity;
 
 fn main() {
     App::new()
@@ -7,6 +8,7 @@ fn main() {
         .add_systems(Update, keyboard_events)
         .run();
 }
+
 fn keyboard_events(key: Res<Input<KeyCode>>) {
     if key.pressed(KeyCode::Right) {
         info!("right arrow");
@@ -14,6 +16,7 @@ fn keyboard_events(key: Res<Input<KeyCode>>) {
         info!("left arrow");
     }
 }
+
 fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
     commands.spawn(Camera2dBundle::default());
     commands.spawn(SpriteBundle {
