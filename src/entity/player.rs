@@ -5,3 +5,5 @@ pub struct Player {
     pub position: Vec2,
     pub health: health::Health,
 }
+
+// Movement implementation

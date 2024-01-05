@@ -14,5 +14,6 @@ impl Health {
             None => { }, // KILL
         }
     }
+    // Heal
 }
 
