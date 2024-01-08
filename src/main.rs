@@ -1,4 +1,4 @@
-use bevy::prelude::*;
+use bevy::{prelude::*, transform::commands};
 mod entity;
 
 fn main() {
@@ -27,6 +27,13 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
     commands.spawn(Camera2dBundle::default());
     commands.spawn(SpriteBundle {
         texture: asset_server.load("programmer_art.png"),
+        ..default()
+    });
+}
+// add  stuff here that does more than spawn a sprite  :pray:
+fn player(mut commands: Commands, asset_server: Res<AssetServer>) {
+    commands.spawn(SpriteBundle {
+        texture: asset_server.load("testing_guy.png"),
         ..default()
     });
 }
