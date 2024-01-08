@@ -1,0 +1,5 @@
+proper player movement
+basic testing sprites
+testing rooms
+dialouge boxes
+controller input
