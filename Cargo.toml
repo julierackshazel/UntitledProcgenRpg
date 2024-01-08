@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 bevy = { version = "0.12.1", features = ["dynamic_linking"] }
+bevy_egui = "0.24.0"
 # REMOVE THE DYNAMIC LINKING FEATURE WHEN WE RELEASE, THIS IS JUST SO COMPILES ARE FASTER WHILE TESTING
 # REMOVE DYNAMIC LINKING AT RELEASE
 [profile.dev]
