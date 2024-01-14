@@ -1,9 +1,9 @@
 use bevy::{prelude::*, transform::commands};
-mod entities;
+mod entity;
 //mod entity::movement;
 fn main() {
     let player = entities::player::Player {
-        name: test,
+        name: "test",
         position: todo!(),
         health: todo!(),
     };
