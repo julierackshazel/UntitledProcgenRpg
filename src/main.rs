@@ -1,8 +1,8 @@
 use bevy::{prelude::*, transform::commands};
-mod entity;
-
+mod entities;
+//mod entity::movement;
 fn main() {
-    let player = entity::player::Player {
+    let player = entities::player::Player {
         name: test,
         position: todo!(),
         health: todo!(),
