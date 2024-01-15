@@ -3,8 +3,10 @@ mod entity;
 //mod entity::movement;
 fn main() {
     let player = entity::player::Player {
-        name: "test",
+        name: String::from("test"),
+        //ideally should be a vector containing x, y, and z coords of the player
         position: todo!(),
+        //should probably be a u32? i can't see any cases where player health would reach 32 bit int limit nor do i think it should ever be negative
         health: todo!(),
     };
 
