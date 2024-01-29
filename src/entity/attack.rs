@@ -1,6 +1,6 @@
 use entity::Health::heal;
 use entity::Health::take_damage;
 
-fn attack() {
+fn mako() {
     // add attack code  here
 }
